@@ -13,7 +13,7 @@ RUN npm install
 COPY ./ ./
 
 # run npm install
-# RUN npm run build
+RUN npm run build
 
 # expose ports
 EXPOSE 3000
