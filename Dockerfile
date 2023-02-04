@@ -1,3 +1,5 @@
+ARG PORT
+
 FROM node:18.12.1-alpine
 
 # Create app directory
@@ -16,7 +18,7 @@ COPY ./ ./
 RUN npm run build
 
 # expose ports
-EXPOSE 3000
+EXPOSE ${PORT}
 
 # run app
 CMD ["npm","run", "start"]
